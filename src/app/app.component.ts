@@ -7,7 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'github-profile';
 
-  constructor(public router: Router) {}
+  constructor(public router: Router) { }
+
+  getYear(): string {
+    return new Date().getFullYear().toString()
+  }
 }
