@@ -1,8 +1,10 @@
 <mat-toolbar>
-  <span class="tittle">GitHub Profile Maker</span>
+  <a type="button">
+    <span (click)="router.navigate(['/home'])" class="title">GitHub Profile Maker</span>
+  </a>
   <span class="spacer"></span>
-  <em class="bi bi-github"></em>
-  <em class="bi bi-instagram"></em>
-  <em class="bi bi-linkedin"></em>
+  <a target="_blank" href="https://www.github.com/josevictormoreno"><em class="bi bi-github"></em></a>
+  <a target="_blank" href="https://instagram.com/josevictormoreno_"><em class="bi bi-instagram"></em></a>
+  <a target="_blank" href="https://www.linkedin.com/in/josevictor-adm/"><em class="bi bi-linkedin"></em></a>
 </mat-toolbar>
 <router-outlet></router-outlet>
