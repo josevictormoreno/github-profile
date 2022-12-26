@@ -1,9 +1,11 @@
 <div [class]="class">
   <div [class]="text">
-      <h1 class="title row">Making the best github profile</h1>
-      <p class="msg row">Here's everything you need to create the coolest github profile</p>  
-      <p class="msg row">Icons, images, animations...</p>  
-      <button type="button" (click)="router.navigate(['/profile'])" class="started btn btn-light">Get Started</button>
+      <h1 class="title row">Criando o melhor perfil do GitHub</h1>
+      <p class="msg row">Tudo que você precisa para criar o melhor perfil do GitHub</p>  
+      <p class="msg row">Icones, imagens, animações...</p>  
+
+      <button type="button" class="started btn btn-light" (click)="openDialog()">Iniciar</button>
+
   </div>
   <div [class]="image">
     <img width="100%" src=".././assets/profile.gif">

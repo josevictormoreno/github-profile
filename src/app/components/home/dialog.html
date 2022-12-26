@@ -1,0 +1,10 @@
+<div mat-dialog-content>
+  <div class="row">
+    <mat-form-field class="" appearance="outline">
+      <mat-label>Nome de usuário do Github</mat-label>
+      <input matInput [formControl]="username">
+    </mat-form-field>
+  </div>
+  <button style="margin-right: 2.5rem;" mat-dialog-close="true" type="button" class="btn btn-danger"> Cancelar</button>
+  <button type="button" class="btn btn-success" mat-dialog-close="true" (click)="getStarted()"> Enviar</button>
+</div>
