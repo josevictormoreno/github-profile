@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repositorio.component.scss']
 })
 export class RepositorioComponent implements OnInit {
-
+  username: string = ''
   constructor() { }
 
   ngOnInit(): void {
