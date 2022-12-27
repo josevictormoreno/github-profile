@@ -7,21 +7,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu'
-import { ProfileComponent } from './components/profile/profile.component'
+import { ProfileModule } from './components/profile/profile.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
     
   ],
   providers: [],
   bootstrap: [AppComponent],
   imports: [
+    HomeModule,
+    ProfileModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HomeModule,
     MatIconModule,
     MatToolbarModule,
     MatMenuModule

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-home',
@@ -38,12 +38,13 @@ export class HomeComponent implements OnInit {
 export class Dialog {
   username: FormControl = new FormControl('')
 
-  constructor(public router: Router){}
+  constructor(public router: Router,
+              public dialogRef: MatDialogRef<Dialog>){}
 
   getStarted(){
-    if (this.username){
-      console.log('entrou')
+    if (this.username)
       this.router.navigate(['/profile/' + this.username.value])
-    }
+
+    this.dialogRef.close()
   }
 }

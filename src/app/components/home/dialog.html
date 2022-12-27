@@ -2,7 +2,7 @@
   <div class="row">
     <mat-form-field class="" appearance="outline">
       <mat-label>Nome de usuário do Github</mat-label>
-      <input matInput [formControl]="username">
+      <input (keyup.enter)="getStarted()" matInput [formControl]="username">
     </mat-form-field>
   </div>
   <button style="margin-right: 2.5rem;" mat-dialog-close="true" type="button" class="btn btn-danger"> Cancelar</button>
