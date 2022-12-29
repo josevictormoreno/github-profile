@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-repositorio',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepositorioComponent implements OnInit {
   username: string = ''
-  constructor() { }
+  constructor(public activatedRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+    const username = this.activatedRoute.snapshot.paramMap.get('username')
+    if(username)
+      this.username = username
+    
   }
 
 }
