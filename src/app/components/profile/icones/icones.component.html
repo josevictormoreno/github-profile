@@ -3,17 +3,22 @@
   <h1>Ícones</h1>
 
   <div class="row">
+    <h2>Redes Sociais</h2>
+    <p>
+      Digite o nome de usuário da rede social desejada, clique no botão de copiar. Cole em seu repositório que foi criado no passo anterior,
+      Você pode fazer isso quantas vezes quiser.
+    </p>
     <div class="col card-div">
     <mat-card class="mat-elevation-z8 card">
       <mat-card-title>Instagram</mat-card-title>
       <mat-card-content mat-card-image style="margin: 1rem;">
         <img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white">
       </mat-card-content>
-      <mat-form-field class="" appearance="outline">
-        <mat-label>Nome de usuário do Github</mat-label>
+      <mat-form-field class="col-12" appearance="outline">
+        <mat-label>Nome de usuário do Instagram</mat-label>
         <input matInput [formControl]="instagram">
       </mat-form-field>
-      <button class="started btn btn-light">Copiar</button>
+      <mat-card-actions><button class="started btn btn-light">Copiar</button></mat-card-actions>
     </mat-card>
   </div>
     <br>
@@ -23,6 +28,11 @@
       <mat-card-content mat-card-image style="margin: 1rem;">
         <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white">
       </mat-card-content>
+      <mat-form-field class="col-12" appearance="outline">
+        <mat-label>Seu email</mat-label>
+        <input matInput [formControl]="gmail">
+      </mat-form-field>
+      <mat-card-actions><button class="started btn btn-light">Copiar</button></mat-card-actions>
     </mat-card>
     </div>
     <br>
@@ -32,6 +42,11 @@
       <mat-card-content mat-card-image style="margin: 1rem;">
         <img src="https://img.shields.io/badge/-Linkedin-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
       </mat-card-content>
+      <mat-form-field class="col-12" appearance="outline">
+        <mat-label>Nome de usuário do LinkedIn</mat-label>
+        <input matInput [formControl]="linkedin">
+      </mat-form-field>
+      <mat-card-actions><button class="started btn btn-light">Copiar</button></mat-card-actions>
     </mat-card>
     </div>
     <br>
@@ -41,9 +56,22 @@
       <mat-card-content mat-card-image style="margin: 1rem;">
         <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
       </mat-card-content>
+      <mat-form-field class="col-12" appearance="outline">
+        <mat-label>Nome de usuário do Twitter</mat-label>
+        <input matInput [formControl]="twitter">
+      </mat-form-field>
+      <mat-card-actions><button class="started btn btn-light">Copiar</button></mat-card-actions>
     </mat-card>
     </div>
     <br>
+  </div>
+  <div class="container">
+    <h2>Linguagens, frameworks...</h2>
+    <p>
+      É só clicar no ícone que você deseja e ele será copiado. Cole no seu repositório quantos quiser.
+      <strong>Dica:</strong> Esse ícones podem ser usados para mostrar as linguagens/frameworks que você conhece/está aprendendo.
+    </p>
+
   </div>
   <br>
 </div>
