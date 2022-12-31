@@ -8,13 +8,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CodigoComponent } from './codigo/codigo.component';
+import { SnakeComponent } from './snake/snake.component';
 
 @NgModule({
   declarations: [
     ProfileComponent,
     RepositorioComponent,
     IconesComponent,
-    CodigoComponent
+    CodigoComponent,
+    SnakeComponent
   ],
   imports: [
     MatTabsModule,
