@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CodigoComponent } from './codigo/codigo.component';
 import { SnakeComponent } from './snake/snake.component';
+import { InformacoesComponent } from './informacoes/informacoes.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SnakeComponent } from './snake/snake.component';
     RepositorioComponent,
     IconesComponent,
     CodigoComponent,
-    SnakeComponent
+    SnakeComponent,
+    InformacoesComponent
   ],
   imports: [
     MatTabsModule,
